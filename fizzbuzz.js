@@ -8,12 +8,14 @@ function fizzbuzz() {
 
     /* Print Fizz/Buzz/FizzBuzz/Bang depending on value*/
         
-        // if (i%7 === 0 && i%3 === 0 || i%7 === 0 && i%5 === 0) {
-            // console.log("");
-        // } else
-        
-         if (i%3 === 0 & i%5 === 0) { 
+         if (i%3 === 0 && i%5 === 0) { 
             console.log("FizzBuzz");
+        } else if (i%7 === 0 && i%3 === 0) {
+            console.log("FizzBang");
+        } else if (i%7 === 0 && i%5 === 0) {
+            console.log("BuzzBang");
+        } else if (i%11 === 0) {
+            console.log("Bong");
         } else if (i%3 === 0) {
             console.log("Fizz");
         } else if (i%5 === 0) {
